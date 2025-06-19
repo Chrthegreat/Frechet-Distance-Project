@@ -31,43 +31,43 @@ Some file contains only functions while other can be run. Below we describe the 
 On to the files that can be run. The arguments are mostly the same every time:
 
 
-***classic_Frechet_distance.py***
+- classic_Frechet_distance.py
 
 This file executes the classic algorithm and requires 4 arguments. 1) The database name, 2) the number of database curves you want to use (as mentioned we ignore the first row so it will start counting from second row.), 3) the query curve database name and 4) the query curve. 
 
 Example (Windows, linux could be python3): python classic_Frechet_distance.py generated_curves_10_30.csv 100 query_dataset.csv 0
 
-***modern_lower_bound.py***
+- modern_lower_bound.py
 
 A fifth parameter is added, the delta threshold.
 
 Example: python modern_lower_bound.py generated_curves_10_30.csv 100 query_dataset.csv 0 0.01
 
-***modern_positive_filter.py***
+- modern_positive_filter.py
 
 Example: python modern_positive_filter.py generated_curves_10_30.csv 100 query_dataset.csv 0 0.01
 
-***modern_negative_filter.py***
+- modern_negative_filter.py
 
 Example: python modern_negative_filter.py generated_curves_10_30.csv 100 query_dataset.csv 0 0.01
 
-***modern_Frechet_distance.py***
+- modern_Frechet_distance.py
 
 No threshold here. We execute the recursive algorithm.
 
 Example: python modern_Frechet_distance.py generated_curves_10_30.csv 100 query_dataset.csv 0
 
-***modern_vs_classic.py***
+- modern_vs_classic.py
 
 Example: python modern_vs_classic.py generated_curves_10_30.csv 100 query_dataset.csv 0 0.01
 
-***visualize_database.py***
+- visualize_database.py
 
 You will see a visualization of your database curves in 2D space.
 
 Example: python visualize_dataset.py geolife_trajectories_under_5km.csv 100 query_dataset.csv 1
 
-***visualize_results.py***
+- visualize_results.py
 
 This one will uses the file results.txt created by the modern_vs_classic.py. So no parameters are needed. Just run it.
 
