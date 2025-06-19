@@ -75,4 +75,5 @@ Example: python visualize_results.py
 
 
 Have fun! For full explanation of the code and the Frechet distance, check the pdf (its in Greek, sorry.).
+The pdf explaining everything can be found here: http://users.uoa.gr/~chrzacharis/Papers/papers.html
 
